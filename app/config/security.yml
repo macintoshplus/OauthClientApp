@@ -15,8 +15,8 @@ security:
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
         fos_userbundle:
             id: fos_user.user_provider.username
-        hwi:
-            id: hwi_oauth.user.provider  
+        #hwi:
+        #    id: hwi_oauth.user.provider  
 
     firewalls:
         dev:
@@ -34,7 +34,8 @@ security:
                 failure_path:      /login
 
                 oauth_user_provider:
-                    service: hwi_oauth.user.provider
+                #    service: hwi_oauth.user.provider
+                    service: jbnahan_my_app.user_provider
 
     access_control:
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }

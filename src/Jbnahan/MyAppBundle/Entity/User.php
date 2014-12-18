@@ -15,4 +15,29 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
     }
+
+
+    protected $jbnahanAccessToken;
+    
+    protected $jbnahanId;
+
+    public function setJbnahanAccessToken($token) {
+    	$this->jbnahanAccessToken = $token;
+
+    	return $this;
+    }
+
+    public function getJbnahanAccessToken(){
+    	return $this->jbnahanAccessToken;
+    }
+
+    public function setJbnahanId($id) {
+    	$this->jbnahanId = $id;
+
+    	return $this;
+    }
+
+    public function getJbnahanId(){
+    	return $this->jbnahanId;
+    }
 }

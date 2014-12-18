@@ -8,6 +8,15 @@ Jbnahan\MyAppBundle\Entity\User:
             id: true
             generator:
                 strategy: AUTO
+    fields:
+        jbnahanAccessToken:
+            type: string
+            length: 255
+            nullable: true
+        jbnahanId:
+            type: string
+            length: 255
+            nullable: true
 
     lifecycleCallbacks: {  }
 
