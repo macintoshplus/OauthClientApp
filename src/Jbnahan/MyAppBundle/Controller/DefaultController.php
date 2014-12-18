@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('JbnahanMyAppBundle:Default:index.html.twig', array('name' => $name));
     }
+    public function indexWorldAction()
+    {
+        return $this->render('JbnahanMyAppBundle:Default:index.html.twig', array('name' => 'World'));
+    }
 }

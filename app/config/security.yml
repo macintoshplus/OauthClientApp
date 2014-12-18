@@ -15,6 +15,8 @@ security:
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
         fos_userbundle:
             id: fos_user.user_provider.username
+        hwi:
+            id: hwi_oauth.user.provider  
 
     firewalls:
         dev:
@@ -26,7 +28,7 @@ security:
             anonymous: ~
             oauth:
                 resource_owners:
-                    my_custom_provider: "/login/check-custom"
+                    jbnahan_custom: "/login/check-custom"
                 login_path:        /login
                 use_forward:       false
                 failure_path:      /login
@@ -35,5 +37,6 @@ security:
                     service: hwi_oauth.user.provider
 
     access_control:
-        - { path: ^/, roles: IS_AUTHENTICATED_REMEMBERED }
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/connect, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: IS_AUTHENTICATED_REMEMBERED }

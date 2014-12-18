@@ -1,3 +1,7 @@
 jbnahan_my_app_homepage:
     path:     /hello/{name}
     defaults: { _controller: JbnahanMyAppBundle:Default:index }
+
+jbnahan_my_app_hello_world:
+    path:     /
+    defaults: { _controller: JbnahanMyAppBundle:Default:indexWorld }

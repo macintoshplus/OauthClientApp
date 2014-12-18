@@ -1,16 +1,16 @@
 hwi_oauth:
     resource_owners:
-        my_custom:
+        jbnahan_custom:
             type:                oauth2
-            client_id:           <client_id>
-            client_secret:       <client_secret>
-            access_token_url:    https://path.to/oauth/v2/token
-            authorization_url:   https://path.to/oauth/v2/authorize
-            infos_url:           https://path.to/api/user
-            scope:               "read"
+            client_id:           4_53qtkhbpipog8wsc40c80k00ccgcks440gog44co8css88gg08
+            client_secret:       2amc0uxn89hckwkowkw0kco4kcw0w44cg0k8ok44gcggw88ogk
+            access_token_url:    http://172.17.0.6/oauth/v2/token
+            authorization_url:   http://172.17.0.6/oauth/v2/auth
+            infos_url:           http://172.17.0.6/api/user
+            scope:               "user"
             user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
             paths:
                 identifier: id
                 nickname:   username
-                realname:   fullname
+                realname:   username
     firewall_name: secured_area
