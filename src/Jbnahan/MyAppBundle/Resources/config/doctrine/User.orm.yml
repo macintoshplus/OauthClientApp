@@ -1,0 +1,13 @@
+Jbnahan\MyAppBundle\Entity\User:
+    type: entity
+    table: fos_user
+    repositoryClass: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+
+    lifecycleCallbacks: {  }
+

@@ -1,0 +1,7 @@
+parameters:
+#    jbnahan_my_app.example.class: Jbnahan\MyAppBundle\Example
+
+services:
+#    jbnahan_my_app.example:
+#        class: %jbnahan_my_app.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

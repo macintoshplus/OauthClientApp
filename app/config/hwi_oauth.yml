@@ -1,0 +1,16 @@
+hwi_oauth:
+    resource_owners:
+        my_custom:
+            type:                oauth2
+            client_id:           <client_id>
+            client_secret:       <client_secret>
+            access_token_url:    https://path.to/oauth/v2/token
+            authorization_url:   https://path.to/oauth/v2/authorize
+            infos_url:           https://path.to/api/user
+            scope:               "read"
+            user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+            paths:
+                identifier: id
+                nickname:   username
+                realname:   fullname
+    firewall_name: secured_area
