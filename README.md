@@ -27,8 +27,11 @@ Open `app/config/hwi_oauth.yml` and change this key for your Oauth server.
 # Use OAuth Client and Server
 
 1) Install OAuthServerApp and configure it (add user, client)
+
 2) Install OAuthClientApp
+
 3) Configure the client OAuth in `app/config/hwi_oauth.yml`
+
 4) Open browser and go to home page of OauthClientApp.
 
 
