@@ -26,9 +26,9 @@ Open `app/config/hwi_oauth.yml` and change this key for your Oauth server.
 
 # Use OAuth Client and Server
 
-1) Install OAuthServerApp and configure it (add user, client)
+1) Install [OAuthServerApp](https://github.com/macintoshplus/OauthServerApp) and configure it (add user, client)
 
-2) Install OAuthClientApp
+2) Install [OAuthClientApp](https://github.com/macintoshplus/OauthClientApp)
 
 3) Configure the client OAuth in `app/config/hwi_oauth.yml`
 
