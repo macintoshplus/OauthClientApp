@@ -37,8 +37,6 @@ Open `app/config/hwi_oauth.yml` and change this key for your Oauth server.
 
 # Link
 
-Fos User Bundle :
-https://github.com/FriendsOfSymfony/FOSUserBundle
+[Fos User Bundle](https://github.com/FriendsOfSymfony/FOSUserBundle)
 
-Hwi Oauth Bundle :
-https://github.com/hwi/HWIOAuthBundle
+[Hwi Oauth Bundle](https://github.com/hwi/HWIOAuthBundle)
