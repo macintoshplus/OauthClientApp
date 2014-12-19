@@ -24,7 +24,7 @@ $ php app/console doctrine:schema:create
 Open `app/config/hwi_oauth.yml` and change this key for your Oauth server.
 
 
-# Use
+# Use OAuth Client and Server
 
 1) Install OAuthServerApp and configure it (add user, client)
 2) Install OAuthClientApp
