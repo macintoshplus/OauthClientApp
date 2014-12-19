@@ -2,11 +2,11 @@ hwi_oauth:
     resource_owners:
         jbnahan_custom:
             type:                oauth2
-            client_id:           4_53qtkhbpipog8wsc40c80k00ccgcks440gog44co8css88gg08
-            client_secret:       2amc0uxn89hckwkowkw0kco4kcw0w44cg0k8ok44gcggw88ogk
-            access_token_url:    http://172.17.0.6/oauth/v2/token
-            authorization_url:   http://172.17.0.6/oauth/v2/auth
-            infos_url:           http://172.17.0.6/api/user
+            client_id:           <client_id>
+            client_secret:       <client_secret>
+            access_token_url:    http://your.server.local/oauth/v2/token
+            authorization_url:   http://your.server.local/oauth/v2/auth
+            infos_url:           http://your.server.local/api/user
             scope:               "user"
             user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
             paths:

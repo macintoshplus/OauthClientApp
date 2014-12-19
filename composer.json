@@ -46,7 +46,8 @@
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "file": "app/config/hwi_oauth.yml"
         },
         "branch-alias": {
             "dev-master": "2.3-dev"
