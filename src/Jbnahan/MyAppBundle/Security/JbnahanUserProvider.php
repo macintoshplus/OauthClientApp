@@ -1,5 +1,5 @@
 <?php
-namespace JbNahan\Bundle\UsersBundle\Security;
+namespace Jbnahan\MyAppBundle\Security;
 
 use HWI\Bundle\OAuthBundle\OAuth\Response\UserResponseInterface;
 use HWI\Bundle\OAuthBundle\Security\Core\User\FOSUBUserProvider as BaseClass;
@@ -63,6 +63,7 @@ class JbnahanUserProvider extends BaseClass
             $user->setPassword($username);
             $user->setEnabled(true);
             $this->userManager->updateUser($user);
+
             return $user;
         }
 
